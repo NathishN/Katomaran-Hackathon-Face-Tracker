@@ -1,4 +1,4 @@
-﻿"""
+"""
 Flask web backend for the Intelligent Face Tracker dashboard.
 Run: python web_app.py  -> open http://localhost:5000
 """
@@ -229,9 +229,16 @@ def _make_placeholder():
 
 def _generate_mjpeg():
     placeholder = _make_placeholder()
+    last_frame = placeholder
     while True:
-        try: frame_bytes = _state["frame_queue"].get(timeout=0.5)
-        except queue.Empty: frame_bytes = placeholder
+        try:
+            frame_bytes = _state["frame_queue"].get(timeout=0.1)
+            last_frame = frame_bytes
+        except queue.Empty:
+            if not _state["running"]:
+                last_frame = placeholder
+            frame_bytes = last_frame
+            time.sleep(0.03)
         yield (b"--frame\r\nContent-Type: image/jpeg\r\n\r\n" + frame_bytes + b"\r\n")
 
 @app.route("/video_feed")
