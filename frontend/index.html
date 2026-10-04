@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FaceTracker AI — Intelligent Visitor Analytics</title>
+<meta name="description" content="Real-time face detection, tracking and unique visitor analytics powered by YOLOv8 and ArcFace." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<!-- ===== SIDEBAR ===== -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/>
+      </svg>
+    </div>
+    <span class="logo-text">FaceTracker<em>AI</em></span>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="#" class="nav-item active" data-view="dashboard" id="nav-dashboard">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      <span>Dashboard</span>
+    </a>
+    <a href="#" class="nav-item" data-view="visitors" id="nav-visitors">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <span>Visitors</span>
+    </a>
+    <a href="#" class="nav-item" data-view="events" id="nav-events">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      <span>Events</span>
+    </a>
+    <a href="#" class="nav-item" data-view="settings" id="nav-settings">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M19.07 19.07l-1.41-1.41M4.93 19.07l1.41-1.41M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+      <span>Settings</span>
+    </a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="status-pill" id="status-pill">
+      <span class="pulse-dot" id="pulse-dot"></span>
+      <span id="status-text">Idle</span>
+    </div>
+  </div>
+</aside>
+
+<!-- ===== MAIN ===== -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+      <h1 class="page-title" id="page-title">Dashboard</h1>
+    </div>
+    <div class="topbar-right">
+      <div class="live-badge" id="live-badge" style="display:none">
+        <span class="live-dot"></span>LIVE
+      </div>
+      <button class="btn btn-danger" id="btn-stop" style="display:none" onclick="stopPipeline()">
+        <svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12"/></svg>
+        Stop
+      </button>
+      <button class="btn btn-primary" id="btn-start" onclick="openStartModal()">
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Start
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== VIEW: DASHBOARD ====== -->
+  <div class="view active" id="view-dashboard">
+    <!-- Stats row -->
+    <div class="stats-grid">
+      <div class="stat-card" id="card-unique">
+        <div class="stat-icon purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+        <div class="stat-body">
+          <p class="stat-label">Unique Visitors</p>
+          <p class="stat-value" id="stat-unique">0</p>
+        </div>
+        <div class="stat-trend up" id="trend-unique"></div>
+      </div>
+      <div class="stat-card" id="card-entries">
+        <div class="stat-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg></div>
+        <div class="stat-body">
+          <p class="stat-label">Total Entries</p>
+          <p class="stat-value" id="stat-entries">0</p>
+        </div>
+      </div>
+      <div class="stat-card" id="card-exits">
+        <div class="stat-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></div>
+        <div class="stat-body">
+          <p class="stat-label">Total Exits</p>
+          <p class="stat-value" id="stat-exits">0</p>
+        </div>
+      </div>
+      <div class="stat-card" id="card-active">
+        <div class="stat-icon cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="stat-body">
+          <p class="stat-label">Active Tracks</p>
+          <p class="stat-value" id="stat-active">0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video + Events row -->
+    <div class="content-grid">
+      <div class="video-panel glass-card">
+        <div class="panel-header">
+          <h2>Live Preview</h2>
+          <span class="badge" id="video-badge">OFFLINE</span>
+        </div>
+        <div class="video-wrapper">
+          <img id="video-feed" src="/video_feed" alt="Live feed" loading="lazy" />
+          <div class="video-overlay" id="video-overlay">
+            <div class="video-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <p>Ready to start</p>
+              <small>Upload a video file or configure an RTSP source</small>
+              <button class="btn btn-primary mt-12" onclick="openStartModal()">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Launch Tracker
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="events-panel glass-card">
+        <div class="panel-header">
+          <h2>Live Events</h2>
+          <button class="icon-btn" onclick="clearEvents()" title="Clear">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          </button>
+        </div>
+        <div class="event-feed" id="event-feed">
+          <div class="event-empty">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9l20-7z"/></svg>
+            <p>Events will appear here in real-time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== VIEW: VISITORS ====== -->
+  <div class="view" id="view-visitors">
+    <div class="view-header">
+      <p class="view-subtitle">Registered faces and visit history</p>
+      <button class="btn btn-secondary" onclick="loadVisitors()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        Refresh
+      </button>
+    </div>
+    <div class="visitor-grid" id="visitor-grid">
+      <div class="empty-state">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <p>No visitors registered yet</p>
+        <small>Start the tracker on a video file to detect faces</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== VIEW: EVENTS ====== -->
+  <div class="view" id="view-events">
+    <div class="view-header">
+      <p class="view-subtitle">All logged entry and exit events</p>
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all" onclick="filterEvents(this,'all')">All</button>
+        <button class="filter-btn" data-filter="entry" onclick="filterEvents(this,'entry')">Entries</button>
+        <button class="filter-btn" data-filter="exit" onclick="filterEvents(this,'exit')">Exits</button>
+        <button class="btn btn-secondary" onclick="loadEvents()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+          Refresh
+        </button>
+      </div>
+    </div>
+    <div class="table-wrap glass-card">
+      <table class="data-table" id="events-table">
+        <thead>
+          <tr>
+            <th>Face</th><th>Type</th><th>Timestamp</th>
+            <th>Frame</th><th>Video Time</th><th>Track</th><th>Image</th>
+          </tr>
+        </thead>
+        <tbody id="events-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ====== VIEW: SETTINGS ====== -->
+  <div class="view" id="view-settings">
+    <div class="view-header">
+      <p class="view-subtitle">Adjust detection, recognition and tracking parameters</p>
+    </div>
+    <div class="settings-grid">
+      <div class="glass-card settings-card">
+        <h3 class="settings-section">Detection</h3>
+        <label>Confidence Threshold
+          <div class="input-row"><input type="range" id="cfg-confidence" min="0.1" max="0.95" step="0.05" value="0.5" oninput="updateRangeLabel(this,'lbl-confidence')"/><span id="lbl-confidence" class="range-label">0.5</span></div>
+        </label>
+        <label>Min Face Size (px)
+          <input type="number" id="cfg-min-face" value="32" min="16" max="128" />
+        </label>
+        <label>Detection Skip Frames
+          <div class="input-row"><input type="range" id="cfg-skip" min="0" max="10" step="1" value="2" oninput="updateRangeLabel(this,'lbl-skip')"/><span id="lbl-skip" class="range-label">2</span></div>
+        </label>
+      </div>
+      <div class="glass-card settings-card">
+        <h3 class="settings-section">Recognition</h3>
+        <label>Similarity Threshold
+          <div class="input-row"><input type="range" id="cfg-sim" min="0.2" max="0.9" step="0.05" value="0.4" oninput="updateRangeLabel(this,'lbl-sim')"/><span id="lbl-sim" class="range-label">0.40</span></div>
+        </label>
+        <label>Min Sharpness
+          <input type="number" id="cfg-sharp" value="10.0" min="0" max="100" step="0.5" />
+        </label>
+        <label>Max Attempts per Track
+          <input type="number" id="cfg-attempts" value="8" min="1" max="30" />
+        </label>
+      </div>
+      <div class="glass-card settings-card">
+        <h3 class="settings-section">Tracking</h3>
+        <label>IoU Threshold
+          <div class="input-row"><input type="range" id="cfg-iou" min="0.1" max="0.9" step="0.05" value="0.25" oninput="updateRangeLabel(this,'lbl-iou')"/><span id="lbl-iou" class="range-label">0.25</span></div>
+        </label>
+        <label>Max Age (frames)
+          <input type="number" id="cfg-maxage" value="45" min="5" max="200" />
+        </label>
+        <label>Min Hits to Confirm
+          <input type="number" id="cfg-minhits" value="2" min="1" max="10" />
+        </label>
+      </div>
+      <div class="glass-card settings-card settings-full">
+        <h3 class="settings-section">Actions</h3>
+        <div class="settings-actions">
+          <button class="btn btn-primary" onclick="saveConfig()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+            Save Config
+          </button>
+          <button class="btn btn-secondary" onclick="loadConfig()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+            Load Current
+          </button>
+        </div>
+        <div class="toast" id="config-toast"></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ====== START MODAL ====== -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeStartModal()"></div>
+<div class="modal glass-card" id="start-modal">
+  <div class="modal-header">
+    <h2>Launch Face Tracker</h2>
+    <button class="icon-btn" onclick="closeStartModal()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <div class="modal-tabs">
+    <button class="modal-tab active" onclick="switchModalTab(this,'upload')">Upload Video</button>
+    <button class="modal-tab" onclick="switchModalTab(this,'rtsp')">RTSP / URL</button>
+    <button class="modal-tab" onclick="switchModalTab(this,'webcam')">Webcam</button>
+  </div>
+
+  <div class="modal-body">
+    <!-- Upload tab -->
+    <div class="modal-pane active" id="pane-upload">
+      <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
+        <input type="file" id="file-input" accept="video/*" style="display:none" onchange="handleFileSelect(this)" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+        <p>Drop video file here or <strong>click to browse</strong></p>
+        <small>Supports MP4, AVI, MOV, MKV (up to 500 MB)</small>
+        <div class="upload-progress" id="upload-progress" style="display:none">
+          <div class="progress-bar" id="progress-bar"></div>
+          <span id="progress-text">Uploading…</span>
+        </div>
+      </div>
+      <div class="upload-status" id="upload-status"></div>
+    </div>
+
+    <!-- RTSP tab -->
+    <div class="modal-pane" id="pane-rtsp">
+      <label class="input-label">Stream URL
+        <input type="text" id="rtsp-url" placeholder="rtsp://user:pass@192.168.1.100:554/stream" class="full-input" />
+      </label>
+    </div>
+
+    <!-- Webcam tab -->
+    <div class="modal-pane" id="pane-webcam">
+      <label class="input-label">Camera Index
+        <input type="number" id="webcam-idx" value="0" min="0" max="10" class="full-input" />
+      </label>
+      <p class="modal-hint">0 = default system webcam</p>
+    </div>
+
+    <div class="modal-options">
+      <label class="checkbox-label">
+        <input type="checkbox" id="opt-fresh" /> Reset database before start
+      </label>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-ghost" onclick="closeStartModal()">Cancel</button>
+      <button class="btn btn-primary btn-lg" id="launch-btn" onclick="launchPipeline()">
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Launch
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ====== IMAGE LIGHTBOX ====== -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Event crop" />
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

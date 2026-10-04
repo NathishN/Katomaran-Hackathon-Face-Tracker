@@ -1,0 +1,437 @@
+2026-10-04 11:48:55,888 | INFO    | DETECTOR_READY       | weights=models/yolov8n-face.pt | device=cuda:0
+2026-10-04 11:49:07,963 | INFO    | RECOGNIZER_READY     | model=buffalo_l | gpu=False
+2026-10-04 11:49:08,702 | INFO    | SOURCE_OPENED        | source=data/sample_video.mp4 | fps=29.97 | stream=False
+2026-10-04 11:49:30,314 | INFO    | TRACK_STARTED        | track=1 | frame=0 | conf=0.7
+2026-10-04 11:49:30,337 | INFO    | TRACK_STARTED        | track=2 | frame=0 | conf=0.7
+2026-10-04 11:49:30,340 | INFO    | TRACK_STARTED        | track=3 | frame=0 | conf=0.63
+2026-10-04 11:49:30,341 | INFO    | TRACK_STARTED        | track=4 | frame=0 | conf=0.63
+2026-10-04 11:49:30,343 | INFO    | TRACK_STARTED        | track=5 | frame=0 | conf=0.62
+2026-10-04 11:49:30,399 | INFO    | TRACK_STARTED        | track=6 | frame=0 | conf=0.6
+2026-10-04 11:49:30,468 | INFO    | TRACK_STARTED        | track=7 | frame=0 | conf=0.58
+2026-10-04 11:49:30,472 | INFO    | TRACK_STARTED        | track=8 | frame=0 | conf=0.56
+2026-10-04 11:49:31,711 | INFO    | EMBEDDING_GENERATED  | track=1 | dim=512 | frame=3
+2026-10-04 11:49:31,716 | INFO    | FACE_REGISTERED      | face=FACE-0001 | track=1 | best_sim_to_existing=-1.0 | unique_count=1
+2026-10-04 11:49:31,725 | INFO    | ENTRY                | face=FACE-0001 | track=1 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0001_entry_114930_978_t1.jpg | new_face=True
+2026-10-04 11:49:31,935 | INFO    | EMBEDDING_GENERATED  | track=2 | dim=512 | frame=3
+2026-10-04 11:49:31,939 | INFO    | FACE_REGISTERED      | face=FACE-0002 | track=2 | best_sim_to_existing=0.058 | unique_count=2
+2026-10-04 11:49:31,946 | INFO    | ENTRY                | face=FACE-0002 | track=2 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0002_entry_114930_978_t2.jpg | new_face=True
+2026-10-04 11:49:32,199 | INFO    | EMBEDDING_GENERATED  | track=3 | dim=512 | frame=3
+2026-10-04 11:49:32,206 | INFO    | FACE_REGISTERED      | face=FACE-0003 | track=3 | best_sim_to_existing=0.187 | unique_count=3
+2026-10-04 11:49:32,213 | INFO    | ENTRY                | face=FACE-0003 | track=3 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0003_entry_114930_978_t3.jpg | new_face=True
+2026-10-04 11:49:32,564 | INFO    | EMBEDDING_GENERATED  | track=4 | dim=512 | frame=3
+2026-10-04 11:49:32,578 | INFO    | FACE_REGISTERED      | face=FACE-0004 | track=4 | best_sim_to_existing=0.235 | unique_count=4
+2026-10-04 11:49:32,587 | INFO    | ENTRY                | face=FACE-0004 | track=4 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0004_entry_114930_978_t4.jpg | new_face=True
+2026-10-04 11:49:32,924 | INFO    | EMBEDDING_GENERATED  | track=5 | dim=512 | frame=3
+2026-10-04 11:49:32,928 | INFO    | FACE_REGISTERED      | face=FACE-0005 | track=5 | best_sim_to_existing=0.206 | unique_count=5
+2026-10-04 11:49:32,934 | INFO    | ENTRY                | face=FACE-0005 | track=5 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0005_entry_114930_978_t5.jpg | new_face=True
+2026-10-04 11:49:33,203 | INFO    | EMBEDDING_GENERATED  | track=6 | dim=512 | frame=3
+2026-10-04 11:49:33,209 | INFO    | FACE_REGISTERED      | face=FACE-0006 | track=6 | best_sim_to_existing=0.154 | unique_count=6
+2026-10-04 11:49:33,217 | INFO    | ENTRY                | face=FACE-0006 | track=6 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0006_entry_114930_978_t6.jpg | new_face=True
+2026-10-04 11:49:33,543 | INFO    | EMBEDDING_GENERATED  | track=7 | dim=512 | frame=3
+2026-10-04 11:49:33,548 | INFO    | FACE_REGISTERED      | face=FACE-0007 | track=7 | best_sim_to_existing=0.278 | unique_count=7
+2026-10-04 11:49:33,554 | INFO    | ENTRY                | face=FACE-0007 | track=7 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0007_entry_114930_978_t7.jpg | new_face=True
+2026-10-04 11:49:33,887 | INFO    | EMBEDDING_GENERATED  | track=8 | dim=512 | frame=3
+2026-10-04 11:49:33,898 | INFO    | FACE_REGISTERED      | face=FACE-0008 | track=8 | best_sim_to_existing=0.198 | unique_count=8
+2026-10-04 11:49:33,906 | INFO    | ENTRY                | face=FACE-0008 | track=8 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0008_entry_114930_978_t8.jpg | new_face=True
+2026-10-04 11:49:34,349 | INFO    | TRACK_STARTED        | track=9 | frame=6 | conf=0.57
+2026-10-04 11:49:35,098 | INFO    | EMBEDDING_GENERATED  | track=9 | dim=512 | frame=9
+2026-10-04 11:49:35,102 | INFO    | FACE_REGISTERED      | face=FACE-0009 | track=9 | best_sim_to_existing=0.15 | unique_count=9
+2026-10-04 11:49:35,109 | INFO    | ENTRY                | face=FACE-0009 | track=9 | frame=9 | video_t=0.3 | image=logs\entries\2026-10-04\FACE-0009_entry_114934_744_t9.jpg | new_face=True
+2026-10-04 11:49:35,111 | INFO    | TRACK_STARTED        | track=10 | frame=9 | conf=0.6
+2026-10-04 11:49:35,113 | INFO    | TRACK_STARTED        | track=11 | frame=9 | conf=0.53
+2026-10-04 11:49:35,748 | INFO    | EMBEDDING_GENERATED  | track=10 | dim=512 | frame=12
+2026-10-04 11:49:35,759 | INFO    | FACE_REGISTERED      | face=FACE-0010 | track=10 | best_sim_to_existing=0.312 | unique_count=10
+2026-10-04 11:49:35,765 | INFO    | ENTRY                | face=FACE-0010 | track=10 | frame=12 | video_t=0.4 | image=logs\entries\2026-10-04\FACE-0010_entry_114935_450_t10.jpg | new_face=True
+2026-10-04 11:49:36,066 | INFO    | EMBEDDING_GENERATED  | track=11 | dim=512 | frame=12
+2026-10-04 11:49:36,075 | INFO    | FACE_REGISTERED      | face=FACE-0011 | track=11 | best_sim_to_existing=0.199 | unique_count=11
+2026-10-04 11:49:36,088 | INFO    | ENTRY                | face=FACE-0011 | track=11 | frame=12 | video_t=0.4 | image=logs\entries\2026-10-04\FACE-0011_entry_114935_450_t11.jpg | new_face=True
+2026-10-04 11:49:36,091 | INFO    | TRACK_STARTED        | track=12 | frame=12 | conf=0.52
+2026-10-04 11:49:36,697 | INFO    | EMBEDDING_GENERATED  | track=12 | dim=512 | frame=15
+2026-10-04 11:49:36,708 | INFO    | FACE_REGISTERED      | face=FACE-0012 | track=12 | best_sim_to_existing=0.295 | unique_count=12
+2026-10-04 11:49:36,723 | INFO    | ENTRY                | face=FACE-0012 | track=12 | frame=15 | video_t=0.5 | image=logs\entries\2026-10-04\FACE-0012_entry_114936_432_t12.jpg | new_face=True
+2026-10-04 11:49:38,372 | INFO    | TRACK_STARTED        | track=13 | frame=27 | conf=0.58
+2026-10-04 11:49:38,988 | INFO    | EMBEDDING_GENERATED  | track=13 | dim=512 | frame=30
+2026-10-04 11:49:38,996 | INFO    | FACE_REGISTERED      | face=FACE-0013 | track=13 | best_sim_to_existing=0.257 | unique_count=13
+2026-10-04 11:49:39,003 | INFO    | ENTRY                | face=FACE-0013 | track=13 | frame=30 | video_t=1.0 | image=logs\entries\2026-10-04\FACE-0013_entry_114938_697_t13.jpg | new_face=True
+2026-10-04 11:49:39,006 | INFO    | TRACK_STARTED        | track=14 | frame=30 | conf=0.55
+2026-10-04 11:49:39,801 | INFO    | EMBEDDING_GENERATED  | track=14 | dim=512 | frame=33
+2026-10-04 11:49:39,807 | INFO    | FACE_REGISTERED      | face=FACE-0014 | track=14 | best_sim_to_existing=0.2 | unique_count=14
+2026-10-04 11:49:39,815 | INFO    | ENTRY                | face=FACE-0014 | track=14 | frame=33 | video_t=1.1 | image=logs\entries\2026-10-04\FACE-0014_entry_114939_369_t14.jpg | new_face=True
+2026-10-04 11:49:40,335 | INFO    | TRACK_STARTED        | track=15 | frame=36 | conf=0.51
+2026-10-04 11:49:41,580 | INFO    | EMBEDDING_GENERATED  | track=15 | dim=512 | frame=42
+2026-10-04 11:49:41,581 | INFO    | FACE_RECOGNIZED      | face=FACE-0006 | track=15 | similarity=0.721
+2026-10-04 11:49:41,581 | INFO    | TRACK_MERGED         | face=FACE-0006 | old_track=6 | new_track=15
+2026-10-04 11:49:42,550 | INFO    | TRACK_STARTED        | track=16 | frame=48 | conf=0.54
+2026-10-04 11:49:43,223 | INFO    | EMBEDDING_GENERATED  | track=16 | dim=512 | frame=51
+2026-10-04 11:49:43,224 | INFO    | FACE_RECOGNIZED      | face=FACE-0012 | track=16 | similarity=0.805
+2026-10-04 11:49:43,224 | INFO    | TRACK_MERGED         | face=FACE-0012 | old_track=12 | new_track=16
+2026-10-04 11:49:43,650 | INFO    | TRACK_STARTED        | track=17 | frame=54 | conf=0.5
+2026-10-04 11:49:44,375 | INFO    | EMBEDDING_GENERATED  | track=17 | dim=512 | frame=57
+2026-10-04 11:49:44,398 | INFO    | FACE_REGISTERED      | face=FACE-0015 | track=17 | best_sim_to_existing=0.203 | unique_count=15
+2026-10-04 11:49:44,417 | INFO    | ENTRY                | face=FACE-0015 | track=17 | frame=57 | video_t=1.9 | image=logs\entries\2026-10-04\FACE-0015_entry_114944_003_t17.jpg | new_face=True
+2026-10-04 11:49:44,420 | INFO    | TRACK_STARTED        | track=18 | frame=57 | conf=0.61
+2026-10-04 11:49:44,421 | INFO    | TRACK_STARTED        | track=19 | frame=57 | conf=0.54
+2026-10-04 11:49:45,165 | INFO    | EMBEDDING_GENERATED  | track=18 | dim=512 | frame=60
+2026-10-04 11:49:45,173 | INFO    | FACE_REGISTERED      | face=FACE-0016 | track=18 | best_sim_to_existing=0.287 | unique_count=16
+2026-10-04 11:49:45,181 | INFO    | ENTRY                | face=FACE-0016 | track=18 | frame=60 | video_t=2.0 | image=logs\entries\2026-10-04\FACE-0016_entry_114944_829_t18.jpg | new_face=True
+2026-10-04 11:49:45,424 | INFO    | EMBEDDING_GENERATED  | track=19 | dim=512 | frame=60
+2026-10-04 11:49:45,434 | INFO    | FACE_REGISTERED      | face=FACE-0017 | track=19 | best_sim_to_existing=0.257 | unique_count=17
+2026-10-04 11:49:45,442 | INFO    | ENTRY                | face=FACE-0017 | track=19 | frame=60 | video_t=2.0 | image=logs\entries\2026-10-04\FACE-0017_entry_114944_829_t19.jpg | new_face=True
+2026-10-04 11:49:45,445 | INFO    | TRACKING             | face=FACE-0001 | track=1 | frame=60 | bbox=[3310, 893, 3372, 1002]
+2026-10-04 11:49:45,445 | INFO    | TRACKING             | face=FACE-0002 | track=2 | frame=60 | bbox=[509, 1544, 604, 1655]
+2026-10-04 11:49:45,446 | INFO    | TRACKING             | face=FACE-0003 | track=3 | frame=60 | bbox=[2917, 1006, 2999, 1108]
+2026-10-04 11:49:45,446 | INFO    | TRACKING             | face=FACE-0007 | track=7 | frame=60 | bbox=[1431, 682, 1506, 774]
+2026-10-04 11:49:45,446 | INFO    | TRACKING             | face=FACE-0008 | track=8 | frame=60 | bbox=[2761, 831, 2844, 929]
+2026-10-04 11:49:45,447 | INFO    | TRACKING             | face=FACE-0011 | track=11 | frame=60 | bbox=[1805, 656, 1885, 751]
+2026-10-04 11:49:45,447 | INFO    | TRACKING             | face=FACE-0013 | track=13 | frame=60 | bbox=[2093, 255, 2164, 338]
+2026-10-04 11:49:45,447 | INFO    | TRACKING             | face=FACE-0014 | track=14 | frame=60 | bbox=[3476, 1159, 3576, 1274]
+2026-10-04 11:49:45,447 | INFO    | TRACKING             | face=FACE-0006 | track=15 | frame=60 | bbox=[3485, 556, 3552, 645]
+2026-10-04 11:49:45,447 | INFO    | TRACKING             | face=FACE-0012 | track=16 | frame=60 | bbox=[3645, 776, 3722, 851]
+2026-10-04 11:49:45,448 | INFO    | TRACKING             | face=FACE-0015 | track=17 | frame=60 | bbox=[1050, 9, 1112, 80]
+2026-10-04 11:49:45,448 | INFO    | TRACKING             | face=FACE-0016 | track=18 | frame=60 | bbox=[2254, 16, 2309, 85]
+2026-10-04 11:49:45,448 | INFO    | TRACKING             | face=FACE-0017 | track=19 | frame=60 | bbox=[2101, 2, 2160, 72]
+2026-10-04 11:49:47,021 | INFO    | EXIT                 | face=FACE-0005 | track=5 | frame=18 | video_t=0.6 | image=logs\exits\2026-10-04\FACE-0005_exit_114937_077_t5.jpg | reason=left_frame
+2026-10-04 11:49:47,785 | WARNING | IDENTITY_DRIFT_WARNING | face=FACE-0007 | track=7 | similarity=0.38
+2026-10-04 11:49:47,789 | INFO    | TRACK_STARTED        | track=20 | frame=66 | conf=0.65
+2026-10-04 11:49:47,789 | INFO    | TRACK_STARTED        | track=21 | frame=66 | conf=0.57
+2026-10-04 11:49:48,564 | INFO    | EMBEDDING_GENERATED  | track=20 | dim=512 | frame=69
+2026-10-04 11:49:48,571 | INFO    | FACE_REGISTERED      | face=FACE-0018 | track=20 | best_sim_to_existing=0.349 | unique_count=18
+2026-10-04 11:49:48,583 | INFO    | ENTRY                | face=FACE-0018 | track=20 | frame=69 | video_t=2.3 | image=logs\entries\2026-10-04\FACE-0018_entry_114948_199_t20.jpg | new_face=True
+2026-10-04 11:49:49,046 | INFO    | TRACK_STARTED        | track=22 | frame=72 | conf=0.55
+2026-10-04 11:49:49,941 | INFO    | EXIT                 | face=FACE-0010 | track=10 | frame=30 | video_t=1.0 | image=logs\exits\2026-10-04\FACE-0010_exit_114938_697_t10.jpg | reason=left_frame
+2026-10-04 11:49:50,078 | INFO    | TRACK_DROPPED        | track=21 | reason=never_identified | hits=1
+2026-10-04 11:49:50,313 | INFO    | TRACK_STARTED        | track=23 | frame=78 | conf=0.51
+2026-10-04 11:49:50,815 | INFO    | TRACK_STARTED        | track=24 | frame=81 | conf=0.54
+2026-10-04 11:49:51,086 | INFO    | TRACK_DROPPED        | track=22 | reason=never_identified | hits=1
+2026-10-04 11:49:51,664 | INFO    | EMBEDDING_GENERATED  | track=24 | dim=512 | frame=84
+2026-10-04 11:49:51,667 | INFO    | FACE_REGISTERED      | face=FACE-0019 | track=24 | best_sim_to_existing=0.238 | unique_count=19
+2026-10-04 11:49:51,678 | INFO    | ENTRY                | face=FACE-0019 | track=24 | frame=84 | video_t=2.8 | image=logs\entries\2026-10-04\FACE-0019_entry_114951_242_t24.jpg | new_face=True
+2026-10-04 11:49:52,162 | INFO    | TRACK_STARTED        | track=25 | frame=87 | conf=0.53
+2026-10-04 11:49:52,316 | INFO    | EXIT                 | face=FACE-0004 | track=4 | frame=42 | video_t=1.4 | image=logs\exits\2026-10-04\FACE-0004_exit_114941_207_t4.jpg | reason=left_frame
+2026-10-04 11:49:52,436 | INFO    | TRACK_DROPPED        | track=23 | reason=never_identified | hits=1
+2026-10-04 11:49:52,895 | INFO    | TRACK_STARTED        | track=26 | frame=90 | conf=0.62
+2026-10-04 11:49:52,896 | INFO    | TRACK_STARTED        | track=27 | frame=90 | conf=0.51
+2026-10-04 11:49:53,944 | INFO    | EMBEDDING_GENERATED  | track=26 | dim=512 | frame=93
+2026-10-04 11:49:53,954 | INFO    | FACE_REGISTERED      | face=FACE-0020 | track=26 | best_sim_to_existing=0.194 | unique_count=20
+2026-10-04 11:49:53,969 | INFO    | ENTRY                | face=FACE-0020 | track=26 | frame=93 | video_t=3.1 | image=logs\entries\2026-10-04\FACE-0020_entry_114953_275_t26.jpg | new_face=True
+2026-10-04 11:49:54,323 | INFO    | EMBEDDING_GENERATED  | track=27 | dim=512 | frame=93
+2026-10-04 11:49:54,336 | INFO    | FACE_REGISTERED      | face=FACE-0021 | track=27 | best_sim_to_existing=0.236 | unique_count=21
+2026-10-04 11:49:54,347 | INFO    | ENTRY                | face=FACE-0021 | track=27 | frame=93 | video_t=3.1 | image=logs\entries\2026-10-04\FACE-0021_entry_114953_275_t27.jpg | new_face=True
+2026-10-04 11:49:55,274 | INFO    | TRACK_DROPPED        | track=25 | reason=never_identified | hits=1
+2026-10-04 11:49:56,429 | WARNING | IDENTITY_DRIFT_WARNING | face=FACE-0006 | track=15 | similarity=0.398
+2026-10-04 11:49:56,935 | INFO    | TRACK_STARTED        | track=28 | frame=105 | conf=0.5
+2026-10-04 11:49:57,711 | INFO    | EMBEDDING_GENERATED  | track=28 | dim=512 | frame=108
+2026-10-04 11:49:57,719 | INFO    | FACE_REGISTERED      | face=FACE-0022 | track=28 | best_sim_to_existing=0.269 | unique_count=22
+2026-10-04 11:49:57,728 | INFO    | ENTRY                | face=FACE-0022 | track=28 | frame=108 | video_t=3.6 | image=logs\entries\2026-10-04\FACE-0022_entry_114957_356_t28.jpg | new_face=True
+2026-10-04 11:49:57,736 | INFO    | TRACK_STARTED        | track=29 | frame=108 | conf=0.59
+2026-10-04 11:49:58,514 | INFO    | EMBEDDING_GENERATED  | track=29 | dim=512 | frame=111
+2026-10-04 11:49:58,516 | INFO    | FACE_RECOGNIZED      | face=FACE-0008 | track=29 | similarity=0.814
+2026-10-04 11:49:58,517 | INFO    | TRACK_MERGED         | face=FACE-0008 | old_track=8 | new_track=29
+2026-10-04 11:49:59,142 | INFO    | EXIT                 | face=FACE-0014 | track=14 | frame=69 | video_t=2.3 | image=logs\exits\2026-10-04\FACE-0014_exit_114948_199_t14.jpg | reason=left_frame
+2026-10-04 11:50:00,475 | INFO    | TRACK_STARTED        | track=30 | frame=120 | conf=0.57
+2026-10-04 11:50:00,475 | INFO    | TRACKING             | face=FACE-0001 | track=1 | frame=120 | bbox=[3292, 905, 3355, 1021]
+2026-10-04 11:50:00,476 | INFO    | TRACKING             | face=FACE-0003 | track=3 | frame=120 | bbox=[2320, 1642, 2416, 1754]
+2026-10-04 11:50:00,476 | INFO    | TRACKING             | face=FACE-0007 | track=7 | frame=120 | bbox=[917, 1324, 1008, 1425]
+2026-10-04 11:50:00,477 | INFO    | TRACKING             | face=FACE-0009 | track=9 | frame=120 | bbox=[122, 182, 183, 261]
+2026-10-04 11:50:00,478 | INFO    | TRACKING             | face=FACE-0011 | track=11 | frame=120 | bbox=[1474, 1303, 1568, 1406]
+2026-10-04 11:50:00,478 | INFO    | TRACKING             | face=FACE-0013 | track=13 | frame=120 | bbox=[1955, 747, 2040, 850]
+2026-10-04 11:50:00,478 | INFO    | TRACKING             | face=FACE-0006 | track=15 | frame=120 | bbox=[2988, 937, 3073, 1039]
+2026-10-04 11:50:00,479 | INFO    | TRACKING             | face=FACE-0015 | track=17 | frame=120 | bbox=[1203, 315, 1274, 400]
+2026-10-04 11:50:00,479 | INFO    | TRACKING             | face=FACE-0016 | track=18 | frame=120 | bbox=[2021, 405, 2093, 492]
+2026-10-04 11:50:00,479 | INFO    | TRACKING             | face=FACE-0017 | track=19 | frame=120 | bbox=[1754, 354, 1829, 448]
+2026-10-04 11:50:00,480 | INFO    | TRACKING             | face=FACE-0019 | track=24 | frame=120 | bbox=[958, 802, 1046, 901]
+2026-10-04 11:50:00,480 | INFO    | TRACKING             | face=FACE-0020 | track=26 | frame=120 | bbox=[1333, 106, 1394, 184]
+2026-10-04 11:50:00,480 | INFO    | TRACKING             | face=FACE-0021 | track=27 | frame=120 | bbox=[1668, 112, 1734, 198]
+2026-10-04 11:50:00,480 | INFO    | TRACKING             | face=FACE-0022 | track=28 | frame=120 | bbox=[2865, 1316, 2943, 1426]
+2026-10-04 11:50:00,480 | INFO    | TRACKING             | face=FACE-0008 | track=29 | frame=120 | bbox=[2097, 1425, 2197, 1536]
+2026-10-04 11:50:01,693 | INFO    | EXIT                 | face=FACE-0012 | track=16 | frame=78 | video_t=2.6 | image=logs\exits\2026-10-04\FACE-0012_exit_114950_223_t16.jpg | reason=left_frame
+2026-10-04 11:50:01,977 | INFO    | TRACK_STARTED        | track=31 | frame=126 | conf=0.65
+2026-10-04 11:50:02,808 | INFO    | EMBEDDING_GENERATED  | track=31 | dim=512 | frame=129
+2026-10-04 11:50:02,808 | INFO    | FACE_RECOGNIZED      | face=FACE-0014 | track=31 | similarity=0.651
+2026-10-04 11:50:02,820 | INFO    | ENTRY                | face=FACE-0014 | track=31 | frame=129 | video_t=4.3 | image=logs\entries\2026-10-04\FACE-0014_entry_115002_331_t31.jpg | new_face=False | sim=0.651
+2026-10-04 11:50:03,047 | INFO    | TRACK_DROPPED        | track=30 | reason=never_identified | hits=1
+2026-10-04 11:50:04,340 | INFO    | TRACK_STARTED        | track=32 | frame=135 | conf=0.58
+2026-10-04 11:50:05,724 | INFO    | EXIT                 | face=FACE-0018 | track=20 | frame=93 | video_t=3.1 | image=logs\exits\2026-10-04\FACE-0018_exit_114953_275_t20.jpg | reason=left_frame
+2026-10-04 11:50:06,908 | INFO    | TRACK_STARTED        | track=33 | frame=141 | conf=0.65
+2026-10-04 11:50:09,954 | INFO    | TRACK_DROPPED        | track=32 | reason=never_identified | hits=1
+2026-10-04 11:50:10,166 | INFO    | TRACK_STARTED        | track=34 | frame=147 | conf=0.61
+2026-10-04 11:50:10,168 | INFO    | TRACK_STARTED        | track=35 | frame=147 | conf=0.59
+2026-10-04 11:50:10,324 | INFO    | EXIT                 | face=FACE-0002 | track=2 | frame=102 | video_t=3.4 | image=logs\exits\2026-10-04\FACE-0002_exit_114955_952_t2.jpg | reason=left_frame
+2026-10-04 11:50:11,299 | INFO    | EMBEDDING_GENERATED  | track=34 | dim=512 | frame=150
+2026-10-04 11:50:11,300 | INFO    | FACE_RECOGNIZED      | face=FACE-0014 | track=34 | similarity=0.431
+2026-10-04 11:50:11,301 | INFO    | TRACK_MERGED         | face=FACE-0014 | old_track=31 | new_track=34
+2026-10-04 11:50:11,301 | INFO    | TRACK_STARTED        | track=36 | frame=150 | conf=0.67
+2026-10-04 11:50:11,301 | INFO    | TRACK_STARTED        | track=37 | frame=150 | conf=0.58
+2026-10-04 11:50:11,302 | INFO    | TRACK_STARTED        | track=38 | frame=150 | conf=0.53
+2026-10-04 11:50:11,571 | INFO    | TRACK_DROPPED        | track=33 | reason=never_identified | hits=1
+2026-10-04 11:50:12,582 | INFO    | EMBEDDING_GENERATED  | track=36 | dim=512 | frame=153
+2026-10-04 11:50:12,603 | INFO    | FACE_REGISTERED      | face=FACE-0023 | track=36 | best_sim_to_existing=0.312 | unique_count=23
+2026-10-04 11:50:12,611 | INFO    | ENTRY                | face=FACE-0023 | track=36 | frame=153 | video_t=5.11 | image=logs\entries\2026-10-04\FACE-0023_entry_115011_709_t36.jpg | new_face=True
+2026-10-04 11:50:12,616 | INFO    | TRACK_STARTED        | track=39 | frame=153 | conf=0.56
+2026-10-04 11:50:12,617 | INFO    | TRACK_STARTED        | track=40 | frame=153 | conf=0.54
+2026-10-04 11:50:12,618 | INFO    | TRACK_STARTED        | track=41 | frame=153 | conf=0.53
+2026-10-04 11:50:12,619 | INFO    | TRACK_STARTED        | track=42 | frame=153 | conf=0.51
+2026-10-04 11:50:13,547 | INFO    | EMBEDDING_GENERATED  | track=38 | dim=512 | frame=156
+2026-10-04 11:50:13,556 | INFO    | FACE_REGISTERED      | face=FACE-0024 | track=38 | best_sim_to_existing=0.321 | unique_count=24
+2026-10-04 11:50:13,564 | INFO    | ENTRY                | face=FACE-0024 | track=38 | frame=156 | video_t=5.21 | image=logs\entries\2026-10-04\FACE-0024_entry_115013_111_t38.jpg | new_face=True
+2026-10-04 11:50:14,004 | INFO    | EMBEDDING_GENERATED  | track=42 | dim=512 | frame=156
+2026-10-04 11:50:14,016 | INFO    | FACE_REGISTERED      | face=FACE-0025 | track=42 | best_sim_to_existing=0.35 | unique_count=25
+2026-10-04 11:50:14,028 | INFO    | ENTRY                | face=FACE-0025 | track=42 | frame=156 | video_t=5.21 | image=logs\entries\2026-10-04\FACE-0025_entry_115013_111_t42.jpg | new_face=True
+2026-10-04 11:50:14,030 | INFO    | TRACK_STARTED        | track=43 | frame=156 | conf=0.58
+2026-10-04 11:50:14,350 | INFO    | TRACK_DROPPED        | track=35 | reason=never_identified | hits=1
+2026-10-04 11:50:15,236 | INFO    | EMBEDDING_GENERATED  | track=39 | dim=512 | frame=159
+2026-10-04 11:50:15,237 | INFO    | FACE_RECOGNIZED      | face=FACE-0010 | track=39 | similarity=0.522
+2026-10-04 11:50:15,252 | INFO    | ENTRY                | face=FACE-0010 | track=39 | frame=159 | video_t=5.31 | image=logs\entries\2026-10-04\FACE-0010_entry_115014_508_t39.jpg | new_face=False | sim=0.522
+2026-10-04 11:50:15,529 | INFO    | EMBEDDING_GENERATED  | track=40 | dim=512 | frame=159
+2026-10-04 11:50:15,530 | INFO    | FACE_RECOGNIZED      | face=FACE-0024 | track=40 | similarity=0.438
+2026-10-04 11:50:15,530 | INFO    | TRACK_MERGED         | face=FACE-0024 | old_track=38 | new_track=40
+2026-10-04 11:50:15,530 | INFO    | TRACK_STARTED        | track=44 | frame=159 | conf=0.61
+2026-10-04 11:50:15,532 | INFO    | TRACK_STARTED        | track=45 | frame=159 | conf=0.54
+2026-10-04 11:50:15,858 | INFO    | TRACK_DROPPED        | track=37 | reason=never_identified | hits=1
+2026-10-04 11:50:16,419 | INFO    | EMBEDDING_GENERATED  | track=44 | dim=512 | frame=162
+2026-10-04 11:50:16,428 | INFO    | FACE_REGISTERED      | face=FACE-0026 | track=44 | best_sim_to_existing=0.335 | unique_count=26
+2026-10-04 11:50:16,434 | INFO    | ENTRY                | face=FACE-0026 | track=44 | frame=162 | video_t=5.41 | image=logs\entries\2026-10-04\FACE-0026_entry_115016_001_t44.jpg | new_face=True
+2026-10-04 11:50:16,790 | INFO    | TRACK_DROPPED        | track=41 | reason=never_identified | hits=1
+2026-10-04 11:50:17,387 | WARNING | IDENTITY_DRIFT_WARNING | face=FACE-0006 | track=15 | similarity=0.304
+2026-10-04 11:50:17,393 | INFO    | TRACK_STARTED        | track=46 | frame=165 | conf=0.54
+2026-10-04 11:50:17,394 | INFO    | TRACK_STARTED        | track=47 | frame=165 | conf=0.5
+2026-10-04 11:50:17,542 | INFO    | EXIT                 | face=FACE-0022 | track=28 | frame=120 | video_t=4.0 | image=logs\exits\2026-10-04\FACE-0022_exit_115000_126_t28.jpg | reason=left_frame
+2026-10-04 11:50:17,667 | INFO    | TRACK_DROPPED        | track=43 | reason=never_identified | hits=1
+2026-10-04 11:50:18,181 | INFO    | EMBEDDING_GENERATED  | track=47 | dim=512 | frame=168
+2026-10-04 11:50:18,182 | INFO    | FACE_RECOGNIZED      | face=FACE-0024 | track=47 | similarity=0.89
+2026-10-04 11:50:18,183 | INFO    | TRACK_MERGED         | face=FACE-0024 | old_track=40 | new_track=47
+2026-10-04 11:50:18,449 | INFO    | TRACK_DROPPED        | track=45 | reason=never_identified | hits=1
+2026-10-04 11:50:18,678 | INFO    | TRACK_STARTED        | track=48 | frame=171 | conf=0.56
+2026-10-04 11:50:19,476 | INFO    | EMBEDDING_GENERATED  | track=48 | dim=512 | frame=174
+2026-10-04 11:50:19,482 | INFO    | FACE_RECOGNIZED      | face=FACE-0025 | track=48 | similarity=0.516
+2026-10-04 11:50:19,484 | INFO    | TRACK_MERGED         | face=FACE-0025 | old_track=42 | new_track=48
+2026-10-04 11:50:19,774 | INFO    | TRACK_DROPPED        | track=46 | reason=never_identified | hits=1
+2026-10-04 11:50:20,275 | INFO    | TRACK_STARTED        | track=49 | frame=177 | conf=0.55
+2026-10-04 11:50:20,277 | INFO    | TRACK_STARTED        | track=50 | frame=177 | conf=0.54
+2026-10-04 11:50:22,289 | INFO    | EMBEDDING_GENERATED  | track=49 | dim=512 | frame=180
+2026-10-04 11:50:22,302 | INFO    | FACE_REGISTERED      | face=FACE-0027 | track=49 | best_sim_to_existing=0.386 | unique_count=27
+2026-10-04 11:50:22,321 | INFO    | ENTRY                | face=FACE-0027 | track=49 | frame=180 | video_t=6.01 | image=logs\entries\2026-10-04\FACE-0027_entry_115020_676_t49.jpg | new_face=True
+2026-10-04 11:50:22,732 | INFO    | EMBEDDING_GENERATED  | track=50 | dim=512 | frame=180
+2026-10-04 11:50:22,747 | INFO    | FACE_REGISTERED      | face=FACE-0028 | track=50 | best_sim_to_existing=0.296 | unique_count=28
+2026-10-04 11:50:22,758 | INFO    | ENTRY                | face=FACE-0028 | track=50 | frame=180 | video_t=6.01 | image=logs\entries\2026-10-04\FACE-0028_entry_115020_676_t50.jpg | new_face=True
+2026-10-04 11:50:22,761 | INFO    | TRACK_STARTED        | track=51 | frame=180 | conf=0.54
+2026-10-04 11:50:22,763 | INFO    | TRACKING             | face=FACE-0001 | track=1 | frame=180 | bbox=[3293, 881, 3357, 989]
+2026-10-04 11:50:22,763 | INFO    | TRACKING             | face=FACE-0009 | track=9 | frame=180 | bbox=[142, 87, 208, 166]
+2026-10-04 11:50:22,764 | INFO    | TRACKING             | face=FACE-0013 | track=13 | frame=180 | bbox=[2227, 1287, 2325, 1400]
+2026-10-04 11:50:22,764 | INFO    | TRACKING             | face=FACE-0006 | track=15 | frame=180 | bbox=[3158, 1686, 3260, 1787]
+2026-10-04 11:50:22,764 | INFO    | TRACKING             | face=FACE-0015 | track=17 | frame=180 | bbox=[1301, 713, 1387, 809]
+2026-10-04 11:50:22,765 | INFO    | TRACKING             | face=FACE-0016 | track=18 | frame=180 | bbox=[2019, 924, 2101, 1025]
+2026-10-04 11:50:22,765 | INFO    | TRACKING             | face=FACE-0017 | track=19 | frame=180 | bbox=[1743, 909, 1831, 1011]
+2026-10-04 11:50:22,765 | INFO    | TRACKING             | face=FACE-0020 | track=26 | frame=180 | bbox=[1536, 485, 1612, 580]
+2026-10-04 11:50:22,765 | INFO    | TRACKING             | face=FACE-0021 | track=27 | frame=180 | bbox=[1904, 484, 1975, 577]
+2026-10-04 11:50:22,766 | INFO    | TRACKING             | face=FACE-0008 | track=29 | frame=180 | bbox=[1400, 1977, 1514, 2086]
+2026-10-04 11:50:22,766 | INFO    | TRACKING             | face=FACE-0014 | track=34 | frame=180 | bbox=[1740, 1524, 1838, 1648]
+2026-10-04 11:50:22,766 | INFO    | TRACKING             | face=FACE-0023 | track=36 | frame=180 | bbox=[388, 216, 457, 300]
+2026-10-04 11:50:22,767 | INFO    | TRACKING             | face=FACE-0026 | track=44 | frame=180 | bbox=[580, 137, 645, 219]
+2026-10-04 11:50:22,767 | INFO    | TRACKING             | face=FACE-0027 | track=49 | frame=180 | bbox=[896, 201, 958, 283]
+2026-10-04 11:50:22,767 | INFO    | TRACKING             | face=FACE-0028 | track=50 | frame=180 | bbox=[0, 149, 56, 224]
+2026-10-04 11:50:24,141 | INFO    | EMBEDDING_GENERATED  | track=51 | dim=512 | frame=183
+2026-10-04 11:50:24,142 | INFO    | FACE_RECOGNIZED      | face=FACE-0024 | track=51 | similarity=0.501
+2026-10-04 11:50:24,143 | INFO    | TRACK_MERGED         | face=FACE-0024 | old_track=47 | new_track=51
+2026-10-04 11:50:24,341 | INFO    | EXIT                 | face=FACE-0011 | track=11 | frame=138 | video_t=4.6 | image=logs\exits\2026-10-04\FACE-0011_exit_115005_024_t11.jpg | reason=left_frame
+2026-10-04 11:50:25,632 | INFO    | EXIT                 | face=FACE-0007 | track=7 | frame=147 | video_t=4.9 | image=logs\exits\2026-10-04\FACE-0007_exit_115010_090_t7.jpg | reason=left_frame
+2026-10-04 11:50:26,703 | INFO    | TRACK_STARTED        | track=52 | frame=198 | conf=0.56
+2026-10-04 11:50:27,128 | INFO    | TRACK_STARTED        | track=53 | frame=201 | conf=0.52
+2026-10-04 11:50:27,253 | INFO    | EXIT                 | face=FACE-0003 | track=3 | frame=156 | video_t=5.21 | image=logs\exits\2026-10-04\FACE-0003_exit_115013_111_t3.jpg | reason=left_frame
+2026-10-04 11:50:27,873 | INFO    | EMBEDDING_GENERATED  | track=53 | dim=512 | frame=204
+2026-10-04 11:50:27,876 | INFO    | FACE_RECOGNIZED      | face=FACE-0024 | track=53 | similarity=0.847
+2026-10-04 11:50:27,886 | INFO    | ENTRY                | face=FACE-0024 | track=53 | frame=204 | video_t=6.81 | image=logs\entries\2026-10-04\FACE-0024_entry_115027_499_t53.jpg | new_face=False | sim=0.847
+2026-10-04 11:50:27,887 | INFO    | TRACK_STARTED        | track=54 | frame=204 | conf=0.52
+2026-10-04 11:50:28,344 | INFO    | TRACK_STARTED        | track=55 | frame=207 | conf=0.67
+2026-10-04 11:50:28,346 | INFO    | TRACK_STARTED        | track=56 | frame=207 | conf=0.57
+2026-10-04 11:50:28,474 | INFO    | EXIT                 | face=FACE-0019 | track=24 | frame=162 | video_t=5.41 | image=logs\exits\2026-10-04\FACE-0019_exit_115016_001_t24.jpg | reason=left_frame
+2026-10-04 11:50:28,596 | INFO    | TRACK_DROPPED        | track=52 | reason=never_identified | hits=1
+2026-10-04 11:50:29,293 | INFO    | EMBEDDING_GENERATED  | track=55 | dim=512 | frame=210
+2026-10-04 11:50:29,299 | INFO    | FACE_REGISTERED      | face=FACE-0029 | track=55 | best_sim_to_existing=0.332 | unique_count=29
+2026-10-04 11:50:29,306 | INFO    | ENTRY                | face=FACE-0029 | track=55 | frame=210 | video_t=7.01 | image=logs\entries\2026-10-04\FACE-0029_entry_115028_712_t55.jpg | new_face=True
+2026-10-04 11:50:29,309 | INFO    | TRACK_STARTED        | track=57 | frame=210 | conf=0.59
+2026-10-04 11:50:29,310 | INFO    | TRACK_STARTED        | track=58 | frame=210 | conf=0.51
+2026-10-04 11:50:30,343 | INFO    | TRACK_STARTED        | track=59 | frame=213 | conf=0.52
+2026-10-04 11:50:30,599 | INFO    | TRACK_DROPPED        | track=54 | reason=never_identified | hits=1
+2026-10-04 11:50:31,086 | INFO    | EMBEDDING_GENERATED  | track=58 | dim=512 | frame=216
+2026-10-04 11:50:31,094 | INFO    | FACE_REGISTERED      | face=FACE-0030 | track=58 | best_sim_to_existing=0.219 | unique_count=30
+2026-10-04 11:50:31,102 | INFO    | ENTRY                | face=FACE-0030 | track=58 | frame=216 | video_t=7.21 | image=logs\entries\2026-10-04\FACE-0030_entry_115030_723_t58.jpg | new_face=True
+2026-10-04 11:50:31,324 | INFO    | TRACK_DROPPED        | track=56 | reason=never_identified | hits=1
+2026-10-04 11:50:32,018 | INFO    | TRACK_DROPPED        | track=57 | reason=never_identified | hits=1
+2026-10-04 11:50:32,495 | INFO    | TRACK_STARTED        | track=60 | frame=222 | conf=0.63
+2026-10-04 11:50:32,609 | INFO    | EXIT                 | face=FACE-0025 | track=48 | frame=177 | video_t=5.91 | image=logs\exits\2026-10-04\FACE-0025_exit_115019_899_t48.jpg | reason=left_frame
+2026-10-04 11:50:32,736 | INFO    | TRACK_DROPPED        | track=59 | reason=never_identified | hits=1
+2026-10-04 11:50:33,061 | INFO    | EXIT                 | face=FACE-0027 | track=49 | frame=180 | video_t=6.01 | image=logs\exits\2026-10-04\FACE-0027_exit_115020_676_t49.jpg | reason=left_frame
+2026-10-04 11:50:33,980 | INFO    | TRACK_STARTED        | track=61 | frame=231 | conf=0.56
+2026-10-04 11:50:33,982 | INFO    | TRACK_STARTED        | track=62 | frame=231 | conf=0.54
+2026-10-04 11:50:34,191 | INFO    | TRACK_DROPPED        | track=60 | reason=never_identified | hits=1
+2026-10-04 11:50:34,617 | INFO    | EMBEDDING_GENERATED  | track=61 | dim=512 | frame=234
+2026-10-04 11:50:34,619 | INFO    | FACE_RECOGNIZED      | face=FACE-0030 | track=61 | similarity=0.519
+2026-10-04 11:50:34,619 | INFO    | TRACK_MERGED         | face=FACE-0030 | old_track=58 | new_track=61
+2026-10-04 11:50:34,900 | INFO    | EMBEDDING_GENERATED  | track=62 | dim=512 | frame=234
+2026-10-04 11:50:34,903 | INFO    | FACE_RECOGNIZED      | face=FACE-0025 | track=62 | similarity=0.504
+2026-10-04 11:50:34,918 | INFO    | ENTRY                | face=FACE-0025 | track=62 | frame=234 | video_t=7.81 | image=logs\entries\2026-10-04\FACE-0025_entry_115034_305_t62.jpg | new_face=False | sim=0.504
+2026-10-04 11:50:35,550 | INFO    | TRACK_STARTED        | track=63 | frame=237 | conf=0.56
+2026-10-04 11:50:35,666 | INFO    | EXIT                 | face=FACE-0014 | track=34 | frame=192 | video_t=6.41 | image=logs\exits\2026-10-04\FACE-0014_exit_115025_428_t34.jpg | reason=left_frame
+2026-10-04 11:50:35,854 | INFO    | EXIT                 | face=FACE-0001 | track=1 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0001_exit_115035_246_t1.jpg | reason=stream_end
+2026-10-04 11:50:35,863 | INFO    | EXIT                 | face=FACE-0009 | track=9 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0009_exit_115035_246_t9.jpg | reason=stream_end
+2026-10-04 11:50:35,872 | INFO    | EXIT                 | face=FACE-0013 | track=13 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0013_exit_115035_246_t13.jpg | reason=stream_end
+2026-10-04 11:50:35,881 | INFO    | EXIT                 | face=FACE-0006 | track=15 | frame=201 | video_t=6.71 | image=logs\exits\2026-10-04\FACE-0006_exit_115027_060_t15.jpg | reason=stream_end
+2026-10-04 11:50:35,891 | INFO    | EXIT                 | face=FACE-0015 | track=17 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0015_exit_115035_246_t17.jpg | reason=stream_end
+2026-10-04 11:50:35,901 | INFO    | EXIT                 | face=FACE-0016 | track=18 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0016_exit_115035_246_t18.jpg | reason=stream_end
+2026-10-04 11:50:35,911 | INFO    | EXIT                 | face=FACE-0017 | track=19 | frame=234 | video_t=7.81 | image=logs\exits\2026-10-04\FACE-0017_exit_115034_305_t19.jpg | reason=stream_end
+2026-10-04 11:50:35,930 | INFO    | EXIT                 | face=FACE-0020 | track=26 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0020_exit_115035_246_t26.jpg | reason=stream_end
+2026-10-04 11:50:35,939 | INFO    | EXIT                 | face=FACE-0021 | track=27 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0021_exit_115035_246_t27.jpg | reason=stream_end
+2026-10-04 11:50:35,950 | INFO    | EXIT                 | face=FACE-0008 | track=29 | frame=204 | video_t=6.81 | image=logs\exits\2026-10-04\FACE-0008_exit_115027_499_t29.jpg | reason=stream_end
+2026-10-04 11:50:35,960 | INFO    | EXIT                 | face=FACE-0023 | track=36 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0023_exit_115035_246_t36.jpg | reason=stream_end
+2026-10-04 11:50:35,969 | INFO    | EXIT                 | face=FACE-0010 | track=39 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0010_exit_115035_246_t39.jpg | reason=stream_end
+2026-10-04 11:50:35,979 | INFO    | EXIT                 | face=FACE-0026 | track=44 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0026_exit_115035_246_t44.jpg | reason=stream_end
+2026-10-04 11:50:35,990 | INFO    | EXIT                 | face=FACE-0028 | track=50 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0028_exit_115035_246_t50.jpg | reason=stream_end
+2026-10-04 11:50:35,998 | INFO    | EXIT                 | face=FACE-0024 | track=51 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0024_exit_115035_246_t51.jpg | reason=stream_end
+2026-10-04 11:50:36,009 | INFO    | EXIT                 | face=FACE-0024 | track=53 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0024_exit_115035_246_t53.jpg | reason=stream_end
+2026-10-04 11:50:36,020 | INFO    | EXIT                 | face=FACE-0029 | track=55 | frame=210 | video_t=7.01 | image=logs\exits\2026-10-04\FACE-0029_exit_115028_712_t55.jpg | reason=stream_end
+2026-10-04 11:50:36,033 | INFO    | EXIT                 | face=FACE-0030 | track=61 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0030_exit_115035_246_t61.jpg | reason=stream_end
+2026-10-04 11:50:36,050 | INFO    | EXIT                 | face=FACE-0025 | track=62 | frame=237 | video_t=7.91 | image=logs\exits\2026-10-04\FACE-0025_exit_115035_246_t62.jpg | reason=stream_end
+2026-10-04 11:50:36,052 | INFO    | TRACK_DROPPED        | track=63 | reason=never_identified | hits=1
+2026-10-04 11:55:16,797 | INFO    | DETECTOR_READY       | weights=models/yolov8n-face.pt | device=cuda:0
+2026-10-04 11:55:20,370 | INFO    | RECOGNIZER_READY     | model=buffalo_l | gpu=False
+2026-10-04 11:55:20,373 | INFO    | GALLERY_LOADED       | identities=30
+2026-10-04 11:55:20,514 | INFO    | SOURCE_OPENED        | source=C:\Katomaran Hackathon\face_tracker\data\uploads\video_sample1.mp4 | fps=29.97 | stream=False
+2026-10-04 11:55:24,236 | INFO    | TRACK_STARTED        | track=1 | frame=0 | conf=0.7
+2026-10-04 11:55:24,237 | INFO    | TRACK_STARTED        | track=2 | frame=0 | conf=0.7
+2026-10-04 11:55:24,238 | INFO    | TRACK_STARTED        | track=3 | frame=0 | conf=0.63
+2026-10-04 11:55:24,239 | INFO    | TRACK_STARTED        | track=4 | frame=0 | conf=0.63
+2026-10-04 11:55:24,240 | INFO    | TRACK_STARTED        | track=5 | frame=0 | conf=0.62
+2026-10-04 11:55:24,240 | INFO    | TRACK_STARTED        | track=6 | frame=0 | conf=0.6
+2026-10-04 11:55:24,241 | INFO    | TRACK_STARTED        | track=7 | frame=0 | conf=0.58
+2026-10-04 11:55:24,242 | INFO    | TRACK_STARTED        | track=8 | frame=0 | conf=0.56
+2026-10-04 11:55:25,049 | INFO    | EMBEDDING_GENERATED  | track=1 | dim=512 | frame=3
+2026-10-04 11:55:25,051 | INFO    | FACE_RECOGNIZED      | face=FACE-0001 | track=1 | similarity=1.0
+2026-10-04 11:55:25,064 | INFO    | ENTRY                | face=FACE-0001 | track=1 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0001_entry_115524_575_t1.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:25,269 | INFO    | EMBEDDING_GENERATED  | track=2 | dim=512 | frame=3
+2026-10-04 11:55:25,269 | INFO    | FACE_RECOGNIZED      | face=FACE-0002 | track=2 | similarity=1.0
+2026-10-04 11:55:25,284 | INFO    | ENTRY                | face=FACE-0002 | track=2 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0002_entry_115524_575_t2.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:25,491 | INFO    | EMBEDDING_GENERATED  | track=3 | dim=512 | frame=3
+2026-10-04 11:55:25,492 | INFO    | FACE_RECOGNIZED      | face=FACE-0003 | track=3 | similarity=1.0
+2026-10-04 11:55:25,501 | INFO    | ENTRY                | face=FACE-0003 | track=3 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0003_entry_115524_575_t3.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:25,708 | INFO    | EMBEDDING_GENERATED  | track=4 | dim=512 | frame=3
+2026-10-04 11:55:25,709 | INFO    | FACE_RECOGNIZED      | face=FACE-0004 | track=4 | similarity=1.0
+2026-10-04 11:55:25,718 | INFO    | ENTRY                | face=FACE-0004 | track=4 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0004_entry_115524_575_t4.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:25,913 | INFO    | EMBEDDING_GENERATED  | track=5 | dim=512 | frame=3
+2026-10-04 11:55:25,914 | INFO    | FACE_RECOGNIZED      | face=FACE-0005 | track=5 | similarity=1.0
+2026-10-04 11:55:25,923 | INFO    | ENTRY                | face=FACE-0005 | track=5 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0005_entry_115524_575_t5.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:26,139 | INFO    | EMBEDDING_GENERATED  | track=6 | dim=512 | frame=3
+2026-10-04 11:55:26,140 | INFO    | FACE_RECOGNIZED      | face=FACE-0006 | track=6 | similarity=1.0
+2026-10-04 11:55:26,146 | INFO    | ENTRY                | face=FACE-0006 | track=6 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0006_entry_115524_575_t6.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:26,358 | INFO    | EMBEDDING_GENERATED  | track=7 | dim=512 | frame=3
+2026-10-04 11:55:26,358 | INFO    | FACE_RECOGNIZED      | face=FACE-0007 | track=7 | similarity=1.0
+2026-10-04 11:55:26,367 | INFO    | ENTRY                | face=FACE-0007 | track=7 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0007_entry_115524_575_t7.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:26,583 | INFO    | EMBEDDING_GENERATED  | track=8 | dim=512 | frame=3
+2026-10-04 11:55:26,584 | INFO    | FACE_RECOGNIZED      | face=FACE-0008 | track=8 | similarity=1.0
+2026-10-04 11:55:26,591 | INFO    | ENTRY                | face=FACE-0008 | track=8 | frame=3 | video_t=0.1 | image=logs\entries\2026-10-04\FACE-0008_entry_115524_575_t8.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:26,968 | INFO    | TRACK_STARTED        | track=9 | frame=6 | conf=0.57
+2026-10-04 11:55:27,553 | INFO    | EMBEDDING_GENERATED  | track=9 | dim=512 | frame=9
+2026-10-04 11:55:27,553 | INFO    | FACE_RECOGNIZED      | face=FACE-0009 | track=9 | similarity=1.0
+2026-10-04 11:55:27,562 | INFO    | ENTRY                | face=FACE-0009 | track=9 | frame=9 | video_t=0.3 | image=logs\entries\2026-10-04\FACE-0009_entry_115527_306_t9.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:27,563 | INFO    | TRACK_STARTED        | track=10 | frame=9 | conf=0.6
+2026-10-04 11:55:27,564 | INFO    | TRACK_STARTED        | track=11 | frame=9 | conf=0.53
+2026-10-04 11:55:28,137 | INFO    | EMBEDDING_GENERATED  | track=10 | dim=512 | frame=12
+2026-10-04 11:55:28,137 | INFO    | FACE_RECOGNIZED      | face=FACE-0010 | track=10 | similarity=1.0
+2026-10-04 11:55:28,148 | INFO    | ENTRY                | face=FACE-0010 | track=10 | frame=12 | video_t=0.4 | image=logs\entries\2026-10-04\FACE-0010_entry_115527_899_t10.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:28,372 | INFO    | EMBEDDING_GENERATED  | track=11 | dim=512 | frame=12
+2026-10-04 11:55:28,373 | INFO    | FACE_RECOGNIZED      | face=FACE-0011 | track=11 | similarity=1.0
+2026-10-04 11:55:28,390 | INFO    | ENTRY                | face=FACE-0011 | track=11 | frame=12 | video_t=0.4 | image=logs\entries\2026-10-04\FACE-0011_entry_115527_899_t11.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:28,391 | INFO    | TRACK_STARTED        | track=12 | frame=12 | conf=0.52
+2026-10-04 11:55:28,951 | INFO    | EMBEDDING_GENERATED  | track=12 | dim=512 | frame=15
+2026-10-04 11:55:28,952 | INFO    | FACE_RECOGNIZED      | face=FACE-0012 | track=12 | similarity=1.0
+2026-10-04 11:55:28,962 | INFO    | ENTRY                | face=FACE-0012 | track=12 | frame=15 | video_t=0.5 | image=logs\entries\2026-10-04\FACE-0012_entry_115528_702_t12.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:30,485 | INFO    | TRACK_STARTED        | track=13 | frame=27 | conf=0.58
+2026-10-04 11:55:31,012 | INFO    | EMBEDDING_GENERATED  | track=13 | dim=512 | frame=30
+2026-10-04 11:55:31,012 | INFO    | FACE_RECOGNIZED      | face=FACE-0013 | track=13 | similarity=1.0
+2026-10-04 11:55:31,021 | INFO    | ENTRY                | face=FACE-0013 | track=13 | frame=30 | video_t=1.0 | image=logs\entries\2026-10-04\FACE-0013_entry_115530_794_t13.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:31,022 | INFO    | TRACK_STARTED        | track=14 | frame=30 | conf=0.55
+2026-10-04 11:55:32,528 | INFO    | EMBEDDING_GENERATED  | track=14 | dim=512 | frame=33
+2026-10-04 11:55:32,531 | INFO    | FACE_RECOGNIZED      | face=FACE-0014 | track=14 | similarity=1.0
+2026-10-04 11:55:32,563 | INFO    | ENTRY                | face=FACE-0014 | track=14 | frame=33 | video_t=1.1 | image=logs\entries\2026-10-04\FACE-0014_entry_115531_407_t14.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:34,040 | INFO    | TRACK_STARTED        | track=15 | frame=36 | conf=0.51
+2026-10-04 11:55:36,582 | INFO    | EMBEDDING_GENERATED  | track=15 | dim=512 | frame=42
+2026-10-04 11:55:36,583 | INFO    | FACE_RECOGNIZED      | face=FACE-0006 | track=15 | similarity=0.721
+2026-10-04 11:55:36,584 | INFO    | TRACK_MERGED         | face=FACE-0006 | old_track=6 | new_track=15
+2026-10-04 11:55:37,293 | INFO    | TRACK_STARTED        | track=16 | frame=48 | conf=0.54
+2026-10-04 11:55:37,831 | INFO    | EMBEDDING_GENERATED  | track=16 | dim=512 | frame=51
+2026-10-04 11:55:37,832 | INFO    | FACE_RECOGNIZED      | face=FACE-0012 | track=16 | similarity=0.805
+2026-10-04 11:55:37,832 | INFO    | TRACK_MERGED         | face=FACE-0012 | old_track=12 | new_track=16
+2026-10-04 11:55:38,165 | INFO    | TRACK_STARTED        | track=17 | frame=54 | conf=0.5
+2026-10-04 11:55:38,697 | INFO    | EMBEDDING_GENERATED  | track=17 | dim=512 | frame=57
+2026-10-04 11:55:38,698 | INFO    | FACE_RECOGNIZED      | face=FACE-0015 | track=17 | similarity=1.0
+2026-10-04 11:55:38,708 | INFO    | ENTRY                | face=FACE-0015 | track=17 | frame=57 | video_t=1.9 | image=logs\entries\2026-10-04\FACE-0015_entry_115538_457_t17.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:38,709 | INFO    | TRACK_STARTED        | track=18 | frame=57 | conf=0.61
+2026-10-04 11:55:38,710 | INFO    | TRACK_STARTED        | track=19 | frame=57 | conf=0.54
+2026-10-04 11:55:39,267 | INFO    | EMBEDDING_GENERATED  | track=18 | dim=512 | frame=60
+2026-10-04 11:55:39,268 | INFO    | FACE_RECOGNIZED      | face=FACE-0016 | track=18 | similarity=1.0
+2026-10-04 11:55:39,276 | INFO    | ENTRY                | face=FACE-0016 | track=18 | frame=60 | video_t=2.0 | image=logs\entries\2026-10-04\FACE-0016_entry_115539_013_t18.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:39,846 | INFO    | EMBEDDING_GENERATED  | track=19 | dim=512 | frame=60
+2026-10-04 11:55:39,849 | INFO    | FACE_RECOGNIZED      | face=FACE-0017 | track=19 | similarity=1.0
+2026-10-04 11:55:39,893 | INFO    | ENTRY                | face=FACE-0017 | track=19 | frame=60 | video_t=2.0 | image=logs\entries\2026-10-04\FACE-0017_entry_115539_013_t19.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:39,899 | INFO    | TRACKING             | face=FACE-0001 | track=1 | frame=60 | bbox=[3310, 893, 3372, 1002]
+2026-10-04 11:55:39,904 | INFO    | TRACKING             | face=FACE-0002 | track=2 | frame=60 | bbox=[509, 1544, 604, 1655]
+2026-10-04 11:55:39,906 | INFO    | TRACKING             | face=FACE-0003 | track=3 | frame=60 | bbox=[2917, 1006, 2999, 1108]
+2026-10-04 11:55:39,908 | INFO    | TRACKING             | face=FACE-0007 | track=7 | frame=60 | bbox=[1431, 682, 1506, 774]
+2026-10-04 11:55:39,912 | INFO    | TRACKING             | face=FACE-0008 | track=8 | frame=60 | bbox=[2761, 831, 2844, 929]
+2026-10-04 11:55:39,914 | INFO    | TRACKING             | face=FACE-0011 | track=11 | frame=60 | bbox=[1805, 656, 1885, 751]
+2026-10-04 11:55:39,916 | INFO    | TRACKING             | face=FACE-0013 | track=13 | frame=60 | bbox=[2093, 255, 2164, 338]
+2026-10-04 11:55:39,920 | INFO    | TRACKING             | face=FACE-0014 | track=14 | frame=60 | bbox=[3476, 1159, 3576, 1274]
+2026-10-04 11:55:39,921 | INFO    | TRACKING             | face=FACE-0006 | track=15 | frame=60 | bbox=[3485, 556, 3552, 645]
+2026-10-04 11:55:39,924 | INFO    | TRACKING             | face=FACE-0012 | track=16 | frame=60 | bbox=[3645, 776, 3722, 851]
+2026-10-04 11:55:39,927 | INFO    | TRACKING             | face=FACE-0015 | track=17 | frame=60 | bbox=[1050, 9, 1112, 80]
+2026-10-04 11:55:39,929 | INFO    | TRACKING             | face=FACE-0016 | track=18 | frame=60 | bbox=[2254, 16, 2309, 85]
+2026-10-04 11:55:39,932 | INFO    | TRACKING             | face=FACE-0017 | track=19 | frame=60 | bbox=[2101, 2, 2160, 72]
+2026-10-04 11:55:44,000 | INFO    | EXIT                 | face=FACE-0005 | track=5 | frame=18 | video_t=0.6 | image=logs\exits\2026-10-04\FACE-0005_exit_115529_298_t5.jpg | reason=left_frame
+2026-10-04 11:55:44,713 | WARNING | IDENTITY_DRIFT_WARNING | face=FACE-0007 | track=7 | similarity=0.38
+2026-10-04 11:55:44,715 | INFO    | TRACK_STARTED        | track=20 | frame=66 | conf=0.65
+2026-10-04 11:55:44,716 | INFO    | TRACK_STARTED        | track=21 | frame=66 | conf=0.57
+2026-10-04 11:55:45,280 | INFO    | EMBEDDING_GENERATED  | track=20 | dim=512 | frame=69
+2026-10-04 11:55:45,281 | INFO    | FACE_RECOGNIZED      | face=FACE-0018 | track=20 | similarity=1.0
+2026-10-04 11:55:45,292 | INFO    | ENTRY                | face=FACE-0018 | track=20 | frame=69 | video_t=2.3 | image=logs\entries\2026-10-04\FACE-0018_entry_115544_989_t20.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:45,644 | INFO    | TRACK_STARTED        | track=22 | frame=72 | conf=0.55
+2026-10-04 11:55:46,280 | INFO    | EXIT                 | face=FACE-0010 | track=10 | frame=30 | video_t=1.0 | image=logs\exits\2026-10-04\FACE-0010_exit_115530_794_t10.jpg | reason=left_frame
+2026-10-04 11:55:46,372 | INFO    | TRACK_DROPPED        | track=21 | reason=never_identified | hits=1
+2026-10-04 11:55:46,535 | INFO    | TRACK_STARTED        | track=23 | frame=78 | conf=0.51
+2026-10-04 11:55:46,866 | INFO    | TRACK_STARTED        | track=24 | frame=81 | conf=0.54
+2026-10-04 11:55:47,052 | INFO    | TRACK_DROPPED        | track=22 | reason=never_identified | hits=1
+2026-10-04 11:55:47,396 | INFO    | EMBEDDING_GENERATED  | track=24 | dim=512 | frame=84
+2026-10-04 11:55:47,397 | INFO    | FACE_RECOGNIZED      | face=FACE-0019 | track=24 | similarity=1.0
+2026-10-04 11:55:47,408 | INFO    | ENTRY                | face=FACE-0019 | track=24 | frame=84 | video_t=2.8 | image=logs\entries\2026-10-04\FACE-0019_entry_115547_160_t24.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:48,544 | INFO    | TRACK_STARTED        | track=25 | frame=87 | conf=0.53
+2026-10-04 11:55:48,863 | INFO    | EXIT                 | face=FACE-0004 | track=4 | frame=42 | video_t=1.4 | image=logs\exits\2026-10-04\FACE-0004_exit_115536_343_t4.jpg | reason=left_frame
+2026-10-04 11:55:49,167 | INFO    | TRACK_DROPPED        | track=23 | reason=never_identified | hits=1
+2026-10-04 11:55:50,388 | INFO    | TRACK_STARTED        | track=26 | frame=90 | conf=0.62
+2026-10-04 11:55:50,394 | INFO    | TRACK_STARTED        | track=27 | frame=90 | conf=0.51
+2026-10-04 11:55:52,686 | INFO    | EMBEDDING_GENERATED  | track=26 | dim=512 | frame=93
+2026-10-04 11:55:52,687 | INFO    | FACE_RECOGNIZED      | face=FACE-0020 | track=26 | similarity=1.0
+2026-10-04 11:55:52,694 | INFO    | ENTRY                | face=FACE-0020 | track=26 | frame=93 | video_t=3.1 | image=logs\entries\2026-10-04\FACE-0020_entry_115551_504_t26.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:52,936 | INFO    | EMBEDDING_GENERATED  | track=27 | dim=512 | frame=93
+2026-10-04 11:55:52,937 | INFO    | FACE_RECOGNIZED      | face=FACE-0021 | track=27 | similarity=1.0
+2026-10-04 11:55:52,953 | INFO    | ENTRY                | face=FACE-0021 | track=27 | frame=93 | video_t=3.1 | image=logs\entries\2026-10-04\FACE-0021_entry_115551_504_t27.jpg | new_face=False | sim=1.0
+2026-10-04 11:55:53,454 | INFO    | TRACK_DROPPED        | track=25 | reason=never_identified | hits=1
+2026-10-04 11:55:54,126 | WARNING | IDENTITY_DRIFT_WARNING | face=FACE-0006 | track=15 | similarity=0.398
+2026-10-04 11:55:54,438 | INFO    | TRACK_STARTED        | track=28 | frame=105 | conf=0.5
+2026-10-04 11:55:54,665 | INFO    | EXIT                 | face=FACE-0001 | track=1 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0001_exit_115554_378_t1.jpg | reason=stream_end
+2026-10-04 11:55:54,674 | INFO    | EXIT                 | face=FACE-0002 | track=2 | frame=102 | video_t=3.4 | image=logs\exits\2026-10-04\FACE-0002_exit_115553_878_t2.jpg | reason=stream_end
+2026-10-04 11:55:54,683 | INFO    | EXIT                 | face=FACE-0003 | track=3 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0003_exit_115554_378_t3.jpg | reason=stream_end
+2026-10-04 11:55:54,692 | INFO    | EXIT                 | face=FACE-0007 | track=7 | frame=102 | video_t=3.4 | image=logs\exits\2026-10-04\FACE-0007_exit_115553_878_t7.jpg | reason=stream_end
+2026-10-04 11:55:54,699 | INFO    | EXIT                 | face=FACE-0008 | track=8 | frame=93 | video_t=3.1 | image=logs\exits\2026-10-04\FACE-0008_exit_115551_504_t8.jpg | reason=stream_end
+2026-10-04 11:55:54,705 | INFO    | EXIT                 | face=FACE-0009 | track=9 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0009_exit_115554_378_t9.jpg | reason=stream_end
+2026-10-04 11:55:54,713 | INFO    | EXIT                 | face=FACE-0011 | track=11 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0011_exit_115554_378_t11.jpg | reason=stream_end
+2026-10-04 11:55:54,722 | INFO    | EXIT                 | face=FACE-0013 | track=13 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0013_exit_115554_378_t13.jpg | reason=stream_end
+2026-10-04 11:55:54,732 | INFO    | EXIT                 | face=FACE-0014 | track=14 | frame=69 | video_t=2.3 | image=logs\exits\2026-10-04\FACE-0014_exit_115544_989_t14.jpg | reason=stream_end
+2026-10-04 11:55:54,742 | INFO    | EXIT                 | face=FACE-0006 | track=15 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0006_exit_115554_378_t15.jpg | reason=stream_end
+2026-10-04 11:55:54,751 | INFO    | EXIT                 | face=FACE-0012 | track=16 | frame=78 | video_t=2.6 | image=logs\exits\2026-10-04\FACE-0012_exit_115546_468_t16.jpg | reason=stream_end
+2026-10-04 11:55:54,759 | INFO    | EXIT                 | face=FACE-0015 | track=17 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0015_exit_115554_378_t17.jpg | reason=stream_end
+2026-10-04 11:55:54,768 | INFO    | EXIT                 | face=FACE-0016 | track=18 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0016_exit_115554_378_t18.jpg | reason=stream_end
+2026-10-04 11:55:54,778 | INFO    | EXIT                 | face=FACE-0017 | track=19 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0017_exit_115554_378_t19.jpg | reason=stream_end
+2026-10-04 11:55:54,785 | INFO    | EXIT                 | face=FACE-0018 | track=20 | frame=93 | video_t=3.1 | image=logs\exits\2026-10-04\FACE-0018_exit_115551_504_t20.jpg | reason=stream_end
+2026-10-04 11:55:54,794 | INFO    | EXIT                 | face=FACE-0019 | track=24 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0019_exit_115554_378_t24.jpg | reason=stream_end
+2026-10-04 11:55:54,801 | INFO    | EXIT                 | face=FACE-0020 | track=26 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0020_exit_115554_378_t26.jpg | reason=stream_end
+2026-10-04 11:55:54,810 | INFO    | EXIT                 | face=FACE-0021 | track=27 | frame=105 | video_t=3.5 | image=logs\exits\2026-10-04\FACE-0021_exit_115554_378_t27.jpg | reason=stream_end
+2026-10-04 11:55:54,811 | INFO    | TRACK_DROPPED        | track=28 | reason=never_identified | hits=1

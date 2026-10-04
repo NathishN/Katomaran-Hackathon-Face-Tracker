@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
+
+# Model weights (auto-downloaded)
+models/*.pt
+models/*.onnx
+
+# Datasets and large video files
+*.mp4
+*.avi
+*.mkv
+*.mov
+data/uploads/
+data/*.mp4
+
+# Temporary outputs
+output/
+*.tmp.jpg
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
