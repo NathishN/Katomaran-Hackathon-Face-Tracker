@@ -6,6 +6,7 @@ Works on a video file (dev) and on a live **RTSP** stream (interview) with the s
 
 > Demo / explanation video: **<ADD LOOM / YOUTUBE LINK HERE>**
 
+
 ---
 ## 1. Quick start
 ```bash
@@ -125,7 +126,7 @@ EXIT  | face=FACE-0001 | track=1 | frame=120 | video_t=4.8  | image=logs/exits/2
 
 ## 8. AI-assisted workflow
 Planning → feature list → compute estimate → modular code generation → mock-model logic test → tuning on sample video.
-Prompts used are recorded in `docs/PROMPTS.md`; interview notes in `docs/INTERVIEW_NOTES.md`.
+Prompts used are recorded in `docs/PROMPTS.md`.
 
 ---
 This project is a part of a hackathon run by https://katomaran.com
