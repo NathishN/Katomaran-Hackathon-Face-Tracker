@@ -4,8 +4,7 @@ Real-time pipeline: **YOLOv8-face** (detection) → **IoU/velocity tracker** (Hu
 **InsightFace ArcFace (buffalo_l, 512-d)** (embedding / re-identification) → **SQLite + image store + `events.log`**.
 Works on a video file (dev) and on a live **RTSP** stream (interview) with the same command.
 
-> Demo / explanation video: **<ADD LOOM / YOUTUBE LINK HERE>**
-
+> 🎥 **Demo / Explanation Video:** [https://www.loom.com/share/314ecd49571641aa925b249379ce5acc](https://www.loom.com/share/314ecd49571641aa925b249379ce5acc)
 
 ---
 ## 1. Quick start
