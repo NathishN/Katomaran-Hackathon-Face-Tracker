@@ -33,7 +33,8 @@ class VideoSource:
 
     def _open_cap(self) -> bool:
         if isinstance(self.source, str) and self.source.lower().startswith("rtsp"):
-            os.environ.setdefault("OPENCV_FFMPEG_CAPTURE_OPTIONS", "rtsp_transport;tcp")
+            # Always force TCP transport for RTSP (more reliable than UDP on LANs)
+            os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;tcp"
         self.cap = cv2.VideoCapture(self.source)
         return bool(self.cap and self.cap.isOpened())
 
@@ -72,6 +73,7 @@ class VideoSource:
                 pass
             if self._open_cap():
                 ev("STREAM_RECONNECTED")
+                fails = 0  # reset counter after successful reconnect
 
     def read(self):
         """Returns (ok, frame)."""

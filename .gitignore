@@ -5,6 +5,7 @@ __pycache__/
 .Python
 env/
 venv/
+.venv/
 ENV/
 .env
 
@@ -20,8 +21,14 @@ models/*.onnx
 data/uploads/
 data/*.mp4
 
-# Temporary outputs
+# Runtime outputs — logs, DB, event images (large, not source code)
+logs/
 output/
+data/visitors.db
+data/visitors.db-wal
+data/visitors.db-shm
+
+# Temporary files
 *.tmp.jpg
 .DS_Store
 Thumbs.db

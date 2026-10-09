@@ -67,6 +67,10 @@ def _run_pipeline(source: str, fresh: bool, cfg_overrides: dict):
         _state["db_path"] = cfg.storage.db_path
         setup_logging(cfg.storage.log_dir, cfg.output.log_level)
 
+        # Web dashboard streams frames via MJPEG — no need to write a video file.
+        # Disable it to prevent unbounded disk usage on long RTSP sessions.
+        cfg.output.save_annotated_video = False
+
         db = Database(cfg.storage.db_path, reset=fresh)
         events = EventLogger(cfg.storage.log_dir, db)
 

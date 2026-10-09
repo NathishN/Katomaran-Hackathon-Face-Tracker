@@ -35,6 +35,7 @@ def main():
     ap.add_argument("--source", help="video path / rtsp url / webcam index (overrides config)")
     ap.add_argument("--fresh", action="store_true", help="reset database before starting")
     ap.add_argument("--show", action="store_true", help="show live preview window")
+    ap.add_argument("--save-video", action="store_true", help="save annotated output video (auto-off for live streams)")
     ap.add_argument("--max-frames", type=int, default=0)
     args = ap.parse_args()
 
@@ -43,6 +44,14 @@ def main():
         cfg.video_source = args.source
     if args.show:
         cfg.output.show_window = True
+
+    # For live streams (RTSP / webcam), saving annotated video grows forever —
+    # disable it automatically unless the user explicitly asks for it.
+    from src.video_source import _is_stream as _src_is_stream
+    _source_is_live = _src_is_stream(cfg.video_source) or (
+        isinstance(cfg.video_source, str) and cfg.video_source.isdigit())
+    if _source_is_live and not args.save_video:
+        cfg.output.save_annotated_video = False
 
     setup_logging(cfg.storage.log_dir, cfg.output.log_level)
     signal.signal(signal.SIGINT, _on_signal)
